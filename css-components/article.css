@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card__question {
+  padding: 10px 0;
+}
+
+.card__text {
+  padding: 10px 0;
+}
