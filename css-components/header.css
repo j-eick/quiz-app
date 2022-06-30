@@ -5,4 +5,8 @@
 .header__title {
   display: flex;
   justify-content: center;
+
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  padding: 2vh;
 }
