@@ -1,4 +1,12 @@
 .main__bg {
-  background-color: rgb(156, 201, 216);
+  _background-color: #607f7f;
+  _background-image: linear-gradient(315deg, #607f7f 0%, #dbfdfd 100%);
+
+  background-color: #9eb3b3;
+  background-image: linear-gradient(29deg, #9eb3b3 0%, #e0ffff 38%, #c2e8e8 66%, #b2c9c9 100%);
+  
+
+  );
+
   padding: 30px;
 }
