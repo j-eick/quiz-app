@@ -1,7 +1,10 @@
 .card {
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px 30px;
+
+  border-radius: 20px;
 }
 
 .card__question {
@@ -10,4 +13,9 @@
 
 .card__text {
   padding: 10px 0;
+}
+
+.card__submit {
+  display: flex;
+  justify-content: center;
 }
