@@ -1,12 +1,13 @@
 .header {
   background-color: #93b6d4;
+  height: 65px;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__title {
-  display: flex;
-  justify-content: center;
-
   font-family: "Ubuntu";
   font-size: 3rem;
-  padding: 2vh;
 }
