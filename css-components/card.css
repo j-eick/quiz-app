@@ -28,11 +28,22 @@
   justify-content: center;
 }
 
+.card__hashtaglist {
+  list-style: none;
+  display: flex;
+}
+
+.card__hashtaglist__items {
+  list-style: none;
+
+  background-color: rgb(193, 110, 110);
+}
+
 h2 {
   font-size: 1.7rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: var(--fontsize_cardtext_norm);
   width: 100%;
 }
