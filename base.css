@@ -134,6 +134,10 @@ table {
   box-sizing: border-box;
 }
 
+:root {
+  font-size: /* stylelint-disable-next-line rule */ ;
+}
+
 html {
   font-size: 62.5%;
 }
