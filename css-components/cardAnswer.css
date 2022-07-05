@@ -2,23 +2,34 @@
   display: block;
 } */
 
-.card__answer--hidden {
-  display: none;
+_.card__answer--hidden {
+  visibility: hidden;
 }
 
 .card__answer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .card__answer p {
-  justify-content: center;
   display: flex;
+  justify-content: center;
+
+  background-color: rgb(199, 225, 248);
+  font-family: "Ubuntu";
 
   margin: auto;
   width: 70%;
   padding: 20px 0;
+}
 
-  background-color: rgb(199, 225, 248);
-  border-radius: 20px;
-  font-family: "Ubuntu";
+.answer_left {
+  font-weight: bold;
+  font-style: italic;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.answer_right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

@@ -1,11 +1,25 @@
-let submitButton = document.querySelector('[data-js="card_submitButton"]');
+console.clear();
+
+/**
+ * VARIABLE DECLARATION
+ */
+let submitButton = document.querySelector('[data-js="card__submitButton"]');
+let cardAnswer = document.querySelector("[data-js='card__answer']");
+
+/**
+ * CONSOLE TEST
+ */
 console.log(submitButton);
-let cardAnswer = document.querySelector('[data-js="card__answer--hidden"]');
 console.log(cardAnswer);
 
-submitButton.addEventListener("click", clickyDiClick);
+/**
+ * BUTTONS
+ */
+submitButton.addEventListener("click", showAnswer);
 
-function clickyDiClick() {
+/**
+ * FUNCTIONS
+ */
+function showAnswer() {
   cardAnswer.classList.toggle("card__answer--hidden");
-  <></>;
 }

@@ -7,30 +7,9 @@
   background-color: aliceblue;
 
   margin: 20px 0 20px 0;
-  padding: 0 15px;
-  font-size: 2rem;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  box-shadow: 1px 2px 2px 0 black;
   border-radius: 20px;
-}
-
-/* .card__answer--show {
-  display: block;
-} */
-
-.card__answer--hidden {
-  display: none;
-}
-
-.card__answer {
-  display: flex;
-}
-
-.card__answer p {
-  justify-content: center;
-  display: flex;
-
-  margin: auto;
-  width: 70%;
-  padding: 20px 0;
-
-  background-color: aliceblue;
 }
