@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  background-color: #a8c8e5;
+
+  position: relative;
+}
+
+/* .button__bookmark--active {
+  position: absolute;
+  height: 40px;
+  top: -20px;
+  right: 10px;
+} */
+
+.button__bookmark--inactive {
+  position: absolute;
+  height: 40px;
+  top: -20px;
+  right: 10px;
+}

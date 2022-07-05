@@ -5,12 +5,14 @@ console.clear();
  */
 let submitButton = document.querySelector('[data-js="card__submitButton"]');
 let cardAnswer = document.querySelector("[data-js='card__answer']");
+let bookmarkBtn = document.querySelector('[data-js="bookmark--inactive"]');
 
 /**
  * CONSOLE TEST
  */
 console.log(submitButton);
 console.log(cardAnswer);
+console.log(bookmarkBtn);
 
 /**
  * BUTTONS
