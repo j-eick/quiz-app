@@ -1,0 +1,13 @@
+.card__submit {
+  display: flex;
+  justify-content: center;
+}
+
+.card__tipButton {
+  background-color: #a8c8e5;
+  margin: 20px 0;
+  padding: 0 10px;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  border: none;
+}

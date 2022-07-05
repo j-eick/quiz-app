@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Smooch&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---------------- HEADER ---------------->
+    <header class="header">
+      <h1 class="header__title">Quiz-App</h1>
+    </header>
+    <!---------------- MAIN ---------------->
+    <main class="main__bg">
+      <article class="card">
+        <h2 class="card__question">What can't Koreans live without?</h2>
+        <p class="card__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae,
+          est accusamus sapiente consectetur.
+        </p>
+        <div class="card__submit">
+          <button
+            class="card__submitButton"
+            type="button"
+            data-js="card_submitButton"
+          >
+            Show
+          </button>
+          <button
+            class="card__tipButton"
+            type="button"
+            data-js="card_tipButton"
+          >
+            Show tip
+          </button>
+          <!-- HIER SOLL ANTWORDDDD HIN -->
+        </div>
+        <ul class="card__hashtaglist">
+          <li class="card__hashtaglist__items">garlic</li>
+          <li class="card__hashtaglist__items">chili</li>
+          <li class="card__hashtaglist__items">cabbage</li>
+          <li class="card__hashtaglist__items">salt</li>
+        </ul>
+      </article>
+
+      <!---------------- NAV ---------------->
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list__item">Home</li>
+        <li class="nav__list__item">Bookmarks</li>
+        <li class="nav__list__item">Create page</li>
+        <li class="nav__list__item">Profile</li>
+      </ul>
+    </nav>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,6 +1,13 @@
 .card__submit {
   display: flex;
   justify-content: center;
+}
 
-  padding: 10px 0;
+.card__submitButton {
+  background-color: aliceblue;
+
+  margin: 20px 0;
+  padding: 0 10px;
+  font-size: 2rem;
+  border-radius: 20px;
 }

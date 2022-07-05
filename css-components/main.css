@@ -1,5 +1,7 @@
 .main__bg {
-  _height: calc(100vh - 40px - 40px);
+  /* Wieso funktioniere die Abstände auch 
+  ohne die height-Angabe?!?!?? */
+  height: calc(100vh - 65px - 40px);
 
   margin: 100px 0 40px 0;
 
