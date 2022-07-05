@@ -1,0 +1,15 @@
+.card__hashtaglist {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 20px;
+}
+
+.card__hashtaglist__items {
+  list-style: none;
+
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-size: 1.7rem;
+}

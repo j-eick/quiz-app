@@ -23,38 +23,6 @@
   justify-content: center;
 }
 
-.card__hashtaglist {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card__hashtaglist__items {
-  list-style: none;
-
-  font-family: "Ubuntu";
-  font-style: italic;
-  font-size: 1.7rem;
-}
-
-/* .card__answer--show {
-  display: block;
-} */
-
-.card__answer--hidden {
-  display: none;
-}
-
-.card__answer p {
-  justify-content: center;
-  display: flex;
-
-  margin: auto;
-  width: 70%;
-
-  padding: 0 0 20px 0;
-}
-
 h2 {
   font-size: var(--fontsize_card__question);
 }

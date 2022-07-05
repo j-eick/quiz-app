@@ -1,17 +1,3 @@
-.card__submit {
-  display: flex;
-  justify-content: center;
-}
-
-.card__submitButton {
-  background-color: aliceblue;
-
-  margin: 20px 0 20px 0;
-  padding: 0 15px;
-  font-size: 2rem;
-  border-radius: 20px;
-}
-
 /* .card__answer--show {
   display: block;
 } */
@@ -32,5 +18,7 @@
   width: 70%;
   padding: 20px 0;
 
-  background-color: aliceblue;
+  background-color: rgb(199, 225, 248);
+  border-radius: 20px;
+  font-family: "Ubuntu";
 }
