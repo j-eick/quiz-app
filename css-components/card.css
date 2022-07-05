@@ -31,3 +31,11 @@ p {
   font-size: var(--fontsize_cardtext_norm);
   width: 100%;
 }
+
+/* .card__bookmark--active {
+  height: 50px;
+} */
+
+.card__bookmark--inactive {
+  height: 50px;
+}

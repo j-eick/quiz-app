@@ -2,7 +2,7 @@
   display: block;
 } */
 
-_.card__answer--hidden {
+.card__answer--hidden {
   visibility: hidden;
 }
 
