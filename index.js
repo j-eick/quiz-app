@@ -17,11 +17,14 @@ console.log(bookmarkBtn);
 /**
  * BUTTONS
  */
-submitButton.addEventListener("click", showAnswer);
+// BOOKMARK
+bookmarkBtn.addEventListener("click", function activate() {
+  //
+});
 
-/**
- * FUNCTIONS
- */
-function showAnswer() {
+// SHOW ANSWER
+submitButton.addEventListener("click", function showAnswer() {
   cardAnswer.classList.toggle("card__answer--hidden");
-}
+  // TODO - add line that changes buttontext to
+  //        "hide answer"
+});
