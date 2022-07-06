@@ -17,4 +17,9 @@
   height: 40px;
   top: -20px;
   right: 10px;
+  display: block;
+}
+
+.button__bookmark--show {
+  _display: none;
 }

@@ -3,9 +3,9 @@ console.clear();
 /**
  * VARIABLE DECLARATION
  */
-let submitButton = document.querySelector('[data-js="card__submitButton"]');
-let cardAnswer = document.querySelector("[data-js='card__answer']");
-let bookmarkBtn = document.querySelector('[data-js="bookmark--inactive"]');
+const submitButton = document.querySelector('[data-js="card__submitButton"]');
+const cardAnswer = document.querySelector("[data-js='card__answer']");
+const bookmarkBtn = document.querySelector('[data-js="bookmark--active"]');
 
 /**
  * CONSOLE TEST
@@ -19,12 +19,13 @@ console.log(bookmarkBtn);
  */
 // BOOKMARK
 bookmarkBtn.addEventListener("click", function activate() {
-  //
+  bookmarkBtn.classList.toggle(".button_bookmark--show");
 });
 
 // SHOW ANSWER
 submitButton.addEventListener("click", function showAnswer() {
-  cardAnswer.classList.toggle("card__answer--hidden");
+  cardAnswer.classList.toggle(".card__answer--hidden");
+
   // TODO - add line that changes buttontext to
   //        "hide answer"
 });
