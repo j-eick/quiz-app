@@ -1,3 +1,7 @@
+console.clear();
+
 export default function Card() {
-  // stuff
+  const card = document.querySelector("[data-js='card']");
+
+  console.log(card);
 }
