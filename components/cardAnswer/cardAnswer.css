@@ -2,10 +2,6 @@
   display: block;
 } */
 
-.card__answer--hidden {
-  visibility: hidden;
-}
-
 .card__answer {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -32,4 +28,8 @@
 .answer_right {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.card__answer--hidden {
+  display: none;
 }
