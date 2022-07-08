@@ -1,4 +1,7 @@
+import BookmarkButton from "./css-components/buttons/bookmarkButton/bookmarkButton.js";
 console.clear();
+
+BookmarkButton();
 
 /**
  * VARIABLE DECLARATION
@@ -20,10 +23,6 @@ console.log(bookmark_show);
  * BUTTONS
  */
 // BOOKMARK
-bookmarkBtn.addEventListener("click", () => {
-  console.log("bla");
-  bookmark_show.classList.toggle("button__bookmark--show");
-});
 
 // SHOW ANSWER
 submitButton.addEventListener("click", () => {
