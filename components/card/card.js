@@ -32,6 +32,7 @@ export default function Card() {
    * CARD Reneration
    */
   cards.forEach((card) => {
-    const quizCards = document.create(article);
+    const quizCards = document.create("article");
+    quizCards.classList.add("card");
   });
 }
