@@ -39,22 +39,51 @@ export default function Card() {
     // Card
     const quizCard = document.createElement("article");
     quizCard.classList.add("card");
+
+    // Bookmark
+    const bookmark = document.createElement("button");
+    bookmark.classList.add(
+      "button",
+      "button__bookmark--active",
+      "button__bookmark--inactive",
+      "button__bookmark--show"
+    );
+
     // Question
     const questionText = document.createElement("p");
     questionText.classList.add("card__text");
     questionText.innerText = card.question;
-    // SubmitButton
+
+    // AnswerButton
     const answerButton = document.createElement("button");
-    answerButton.classList.add("card__submitButton");
+    answerButton.classList.add("card__submit", "card__submitButton");
+    answerButton.innerText = "Show Answer";
+    answerButton.addEventListener("click", () => {
+      answerText.classList.toggle("card__answer--hidden");
+    });
+
     // TipButton
     const tipButton = document.createElement("button");
-    tipButton.classList.add(".card__tipButton");
+    tipButton.classList.add("card__submit", "card__tipButton");
+    tipButton.innerText = "Show tip";
+
     // Answer
     const answerText = document.createElement("p");
-    answerText.classList.add("card__answer>p");
+    answerText.classList.add(
+      "card__answer",
+      "card__answer>p",
+      "answer_left",
+      "answer_right"
+    );
 
-    //APPEND
+    //####  APPEND  #####
     main.append(quizCard);
-    quizCard.append(questionText, answerButton, tipButton, answerText);
+    quizCard.append(
+      bookmark,
+      questionText,
+      answerButton,
+      tipButton,
+      answerText
+    );
   });
 }
