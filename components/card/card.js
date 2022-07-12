@@ -29,7 +29,7 @@ export default function Card() {
   ];
   console.log(cards);
 
-  const main = document.querySelector("main");
+  const main = document.querySelector("[data-js='main']");
   console.log(main);
 
   /**
@@ -37,11 +37,12 @@ export default function Card() {
    */
   cards.forEach((card) => {
     // Card
-    const quizCards = document.createElement("article");
-    quizCards.classList.add("card");
+    const quizCard = document.createElement("article");
+    quizCard.classList.add("card");
     // Question
     const questionText = document.createElement("p");
     questionText.classList.add("card__text");
+    questionText.innerText = card.question;
     // SubmitButton
     const answerButton = document.createElement("button");
     answerButton.classList.add("card__submitButton");
@@ -51,5 +52,9 @@ export default function Card() {
     // Answer
     const answerText = document.createElement("p");
     answerText.classList.add("card__answer>p");
+
+    //APPEND
+    main.append(quizCard);
+    quizCard.append(questionText, answerButton, tipButton, answerText);
   });
 }
