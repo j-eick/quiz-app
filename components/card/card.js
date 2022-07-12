@@ -3,7 +3,7 @@ console.clear();
 export default function Card() {
   const card = document.querySelector("[data-js='card']");
 
-  console.log(card);
+  // console.log(card);
 
   const cards = [
     {
@@ -27,12 +27,29 @@ export default function Card() {
       Tags: ["a", "b", "c", "d"],
     },
   ];
+  console.log(cards);
+
+  const main = document.querySelector("main");
+  console.log(main);
 
   /**
    * CARD Reneration
    */
   cards.forEach((card) => {
-    const quizCards = document.create("article");
+    // Card
+    const quizCards = document.createElement("article");
     quizCards.classList.add("card");
+    // Question
+    const questionText = document.createElement("p");
+    questionText.classList.add("card__text");
+    // SubmitButton
+    const answerButton = document.createElement("button");
+    answerButton.classList.add("card__submitButton");
+    // TipButton
+    const tipButton = document.createElement("button");
+    tipButton.classList.add(".card__tipButton");
+    // Answer
+    const answerText = document.createElement("p");
+    answerText.classList.add("card__answer>p");
   });
 }
