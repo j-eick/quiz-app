@@ -12,9 +12,9 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.card__question {
+/* .card__question {
   font-family: "Ubuntu";
-}
+} */
 
 .card__text {
   font-family: "Ubuntu";
@@ -24,9 +24,9 @@
   justify-content: center;
 }
 
-h2 {
+/* h2 {
   font-size: var(--fontsize_card__question);
-}
+} */
 
 p {
   font-size: var(--fontsize_cardtext_norm);

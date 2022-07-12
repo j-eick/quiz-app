@@ -8,29 +8,30 @@ export default function Card() {
   const cards = [
     {
       question: "What did Morpheus say?",
-      Answer: "Red or blue pill?",
-      Tags: ["a", "b", "c", "d"],
+      answer: "Red or blue pill?",
+      tags: ["a", "b", "c", "d"],
     },
     {
       question: "What did Niobe say?",
-      Answer: "Something important!",
-      Tags: ["a", "b", "c", "d"],
+      answer: "Something important!",
+      tags: ["a", "b", "c", "d"],
     },
     {
       question: "What did Cypher say?",
-      Answer: "Ignorance is bliss!",
-      Tags: ["a", "b", "c", "d"],
+      answer: "Ignorance is bliss!",
+      tags: ["a", "b", "c", "d"],
     },
     {
       question: "What did Agent Smith say?",
-      Answer: "Mr. Anderson!",
-      Tags: ["a", "b", "c", "d"],
+      answer: "Mr. Anderson!",
+      tags: ["a", "b", "c", "d"],
     },
   ];
-  console.log(cards);
+
+  console.log(cards[0].tags);
 
   const main = document.querySelector("[data-js='main']");
-  console.log(main);
+  //console.log(main);
 
   /**
    * CARD Reneration
@@ -38,7 +39,7 @@ export default function Card() {
   cards.forEach((card) => {
     // Card
     const quizCard = document.createElement("article");
-    quizCard.classList.add("card");
+    quizCard.classList.add("card", "card__text", "p");
 
     // Bookmark
     const bookmark = document.createElement("button");
@@ -75,6 +76,11 @@ export default function Card() {
       "answer_left",
       "answer_right"
     );
+
+    // loop over ul
+    // cards.tags.forEach((elem) => console.log(elem));
+
+    // create 4 li elements for every card individually
 
     //####  APPEND  #####
     main.append(quizCard);
