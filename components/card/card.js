@@ -45,9 +45,13 @@ export default function Card() {
     const bookmark = document.createElement("button");
     bookmark.classList.add("button");
 
-    // Bookmark--Images
+    // Bookmark--Image--1
     const bookmark_active = document.createElement("img");
-    bookmark_active.classList.add("button", "bookmark--active");
+    bookmark_active.classList.add("bookmark--active");
+
+    // Bookmark--Image--2
+    const bookmark_inactive = document.createElement("img");
+    bookmark_inactive.classList.add("bookmark--inactive");
 
     // Question
     const questionText = document.createElement("p");
@@ -84,6 +88,8 @@ export default function Card() {
     main.append(quizCard);
     quizCard.append(
       bookmark,
+      bookmark_active,
+      bookmark_inactive,
       questionText,
       answerButton,
       tipButton,

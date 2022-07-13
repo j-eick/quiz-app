@@ -20,6 +20,6 @@
   display: block;
 }
 
-.button__bookmark--show {
+.button__bookmark--hide {
   visibility: hidden;
 }
