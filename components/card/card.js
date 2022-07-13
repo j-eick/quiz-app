@@ -34,21 +34,20 @@ export default function Card() {
   //console.log(main);
 
   /**
-   * CARD Reneration
+   * CARD GENERATION
    */
   cards.forEach((card) => {
     // Card
     const quizCard = document.createElement("article");
-    quizCard.classList.add("card", "card__text", "p");
+    quizCard.classList.add("card");
 
-    // Bookmark
+    // Bookmark--Button
     const bookmark = document.createElement("button");
-    bookmark.classList.add(
-      "button",
-      "button__bookmark--active",
-      "button__bookmark--inactive",
-      "button__bookmark--show"
-    );
+    bookmark.classList.add("button");
+
+    // Bookmark--Images
+    const bookmark_active = document.createElement("img");
+    bookmark_active.classList.add("button", "bookmark--active");
 
     // Question
     const questionText = document.createElement("p");
@@ -78,7 +77,6 @@ export default function Card() {
     );
 
     // loop over ul
-    // cards.tags.forEach((elem) => console.log(elem));
 
     // create 4 li elements for every card individually
 
