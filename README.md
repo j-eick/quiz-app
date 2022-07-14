@@ -11,4 +11,7 @@
 [ ] fill cards with data from api
 [ ] make navbar clickable
 [ ] fix the scrolling
+
+### Completed
+
 [x] bookmarkButton now behaves correctly
