@@ -28,26 +28,34 @@ export default function Card() {
     },
   ];
 
-  console.log(cards[0].tags);
+  //console.log(cards[0].tags);
 
   const main = document.querySelector("[data-js='main']");
   //console.log(main);
 
   /**
-   * CARD Reneration
+   * CARD GENERATION
    */
   cards.forEach(card => {
     // Card
     const quizCard = document.createElement('article');
-    quizCard.classList.add('card', 'card__text', 'p');
+    quizCard.classList.add('card');
 
-    // Bookmark
+    // Bookmark--Button
     const bookmark = document.createElement('button');
-    bookmark.classList.add(
-      'button',
+    bookmark.classList.add('button');
+
+    // Bookmark--Image--1
+    const bookmark_active = document.createElement('img');
+    bookmark_active.src = './icons/bookmark-outline.svg';
+    bookmark_active.classList.add('button__bookmark--inactive');
+
+    // Bookmark--Image--2
+    const bookmark_inactive = document.createElement('img');
+    bookmark_active.src = './icons/bookmark.svg';
+    bookmark_inactive.classList.add(
       'button__bookmark--active',
-      'button__bookmark--inactive',
-      'button__bookmark--show'
+      'button__bookmark--hide'
     );
 
     // Question
@@ -77,8 +85,12 @@ export default function Card() {
       'answer_right'
     );
 
+    bookmark.addEventListener('click', () => {
+      console.log('inside bookmark');
+      bookmark_inactive.classList.toggle('button__bookmark--hide');
+    });
+
     // loop over ul
-    // cards.tags.forEach((elem) => console.log(elem));
 
     // create 4 li elements for every card individually
 
@@ -91,5 +103,6 @@ export default function Card() {
       tipButton,
       answerText
     );
+    bookmark.append(bookmark_inactive, bookmark_active);
   });
 }
