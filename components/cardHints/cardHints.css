@@ -9,7 +9,7 @@
 .card__hashtaglist__items {
   list-style: none;
 
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-style: italic;
   font-size: 1.7rem;
 }
